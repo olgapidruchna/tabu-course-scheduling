@@ -1,5 +1,6 @@
 from algorithm import tabu_search
 
+# course code list
 courses = [
     "ENGR3415",
     "ENGR3333",
@@ -11,16 +12,16 @@ courses = [
     "SCOPE",
     "FRST101",
 ]
-time_slots = [1, 2, 3, 4, 5]
 
-# """
+# each index corresponds to a time slot:
 # 1 - MR 1 pm
 # 2 - MR 2:50 pm
 # 3 - TF 1 pm
 # 4 - TF 2:50 pm
-# 5 - W
-# """
+# 5 - W 10 am (SCOPE will 'run' on this time slot)
+time_slots = [1, 2, 3, 4, 5]
 
+# Each student has a corresponding list of courses that they want to take (what our algorithm uses to decrease conflicts)
 student_courses = {
     "Lily": {"ENGR3415", "MTH2133", "BIO301"},
     "Madie": {"ENGR3415", "ENGR3333", "AHS8535"},
