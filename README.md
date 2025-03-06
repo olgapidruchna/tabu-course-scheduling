@@ -67,8 +67,7 @@ The basic process of tabu search is as follows:
 ○ Discuss how the algorithm would be applied/adapted to the problem as
 presented  
 ■ Are there alterations that need to be made to the algorithm to enable it to be applied to this problem?  
-■ Are there key assumptions about the problem that must hold true in order
-to use this algorithm?  
+■ Are there key assumptions about the problem that must hold true in order to use this algorithm?  
 ○ Other use cases of the algorithm
 
 The problem we chose is college course scheduling. We wanted to create an algorithm that would assign the courses running in a semester to time slots in such a way that the maximum amount of students are able to enroll in their preferred courses without time conflicts.
@@ -88,6 +87,18 @@ We also have constraints for a valid schedule:
 - Any given time slot cannot have more than 3 classes
 
 The way we evaluate a solution is by finding how many preferred courses are _non-conflicting_ across all students, and dividing it by the number of total preferred courses across all students.
+
+assumptions:
+
+in our application of this algorithm, we are abstracting a lot of details of the problem.
+
+algorithm assumes that there are local optima and jumps around
+
+#### Other use cases:
+
+This algorithm can be modified to be used in many different scheduling problems. For example, it can be used for job scheduling.
+
+It could also be used for spatial allocation, such as organizing stock in a warehouse.
 
 ### Ethical Analysis
 
