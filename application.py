@@ -97,6 +97,22 @@ def randomize_example(courses, students):
     return avail_courses, student_dict
 
 
+# This is a helper function to display the schedule in an easy-to-read way
+def display_schedule(schedule, time_slot_mapping):
+    """Displays the schedule in a readable format, grouping courses by time slot."""
+    time_slot_courses = {}
+
+    for course, time_slot in schedule.items():
+        if time_slot not in time_slot_courses:
+            time_slot_courses[time_slot] = []
+        time_slot_courses[time_slot].append(course)
+
+    print("\n===== Optimized Course Schedule =====")
+    for time_slot in sorted(time_slot_courses.keys()):
+        print(f"{time_slot_mapping[time_slot]}: {', '.join(time_slot_courses[time_slot])}")
+    print("=====================================")
+
+
 course_list = [
     "ENGR3415",
     "ENGR3333",
