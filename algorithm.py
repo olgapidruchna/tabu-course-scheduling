@@ -1,10 +1,9 @@
 import random
-from collections import defaultdict
 
 
 def conflict_free_courses(schedule, student_courses):
     """
-    Serves as our evaluation function for the tabu algorithm. Counts the number of courses
+    Serves as our evaluation function for the tabu algorithm. Finds the percentage of courses
     that do not have time conflicts based on students' listed preferred courses.
 
     Args:
@@ -14,20 +13,22 @@ def conflict_free_courses(schedule, student_courses):
         as the value.
 
     Returns:
-        - total_conflict_free_courses: An integer representing the number of conflict-free
+        - A float representing the percentage of conflict-free
         courses there are across each student.
     """
+    total_courses = 0
     total_conflict_free_courses = 0
 
     for _, pref_courses in student_courses.items():
         times = [schedule[course] for course in pref_courses if course in schedule]
+        total_courses += len(times)
         unique_times = set(times)
 
         # count only non-conflicting courses
         no_conflicts = len(unique_times)
         total_conflict_free_courses += no_conflicts
 
-    return total_conflict_free_courses
+    return (total_conflict_free_courses/total_courses)*100
 
 
 def is_valid_solution(schedule):
@@ -44,14 +45,19 @@ def is_valid_solution(schedule):
     Returns:
         - A boolean: True if the schedule is valid, False otherwise
     """
-    time_slot_count = defaultdict(int)
+    time_slot_count = {}
 
     # Going through all courses in the schedule
     for course, time_slot in schedule.items():
         # check first year classes not on wed
         if "FRST" in course and time_slot == 5:
             return False
-        time_slot_count[time_slot] += 1
+
+        # Increment time slot count
+        if time_slot in time_slot_count:
+            time_slot_count[time_slot] += 1
+        else:
+            time_slot_count[time_slot] = 1
 
     # check no more than 3 classes per slot
     if not all(count <= 3 for count in time_slot_count.values()):
