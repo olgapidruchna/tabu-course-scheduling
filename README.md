@@ -99,12 +99,17 @@ As with all heuristic algorithms, the way that you set up parameters highly impa
 
 These concerns can be mitigated by manually checking your data beforehand and considering what biases may arise from the information presented. Additionally, having humans consider how to craft the objective function and ponder who may be affected by weighing one factor more than another will help to decrease risks of harmful effects.
 
+One such case is the AI company FPI, based in Vietnam, who has taken part in founding the Ethical AI committee in Vietnam in order to ensure their technology's safe use and to protect their country's "commitment to ethical governance and responsible advancement of artificial intelligence." <sup>5</sup>
+
+
+
 ## Resources 
 1. https://en.wikipedia.org/wiki/Tabu_search 
 2. https://www.researchgate.net/publication/228346477_Tabu_Search
 3. https://algorithmafternoon.com/stochastic/tabu_search/  
 https://www.researchgate.net/publication/228346477_Tabu_Search
 4. https://www.researchgate.net/publication/320508257_Intra-Platoon_Vehicle_Sequence_Optimization_for_Eco-Cooperative_Adaptive_Cruise_Control  
+5. https://fptsoftware.com/newsroom/news-and-press-releases/press-release/fpt-to-support-vietnamm-push-for-ethical-and-responsible-ai-innovation 
 
 #### Libraries Used:
 - random
