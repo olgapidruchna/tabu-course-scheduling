@@ -113,12 +113,11 @@ One such case is the AI company FPI, based in Vietnam, who has taken part in fou
 
 ## Resources
 
-1. https://en.wikipedia.org/wiki/Tabu_search
-2. https://www.researchgate.net/publication/228346477_Tabu_Search
-3. https://algorithmafternoon.com/stochastic/tabu_search/  
-   https://www.researchgate.net/publication/228346477_Tabu_Search
-4. https://www.researchgate.net/publication/320508257_Intra-Platoon_Vehicle_Sequence_Optimization_for_Eco-Cooperative_Adaptive_Cruise_Control
-5. https://fptsoftware.com/newsroom/news-and-press-releases/press-release/fpt-to-support-vietnamm-push-for-ethical-and-responsible-ai-innovation
+1. Wikipedia Contributors. “Tabu Search.” Wikipedia, Wikimedia Foundation, 18 June 2019, en.wikipedia.org/wiki/Tabu_search.
+2. Glover, Fred, and Manuel Laguna. Tabu Search. Boston, MA, Springer US, 1997.
+3. Algorithmafternoon.com, 2024, algorithmafternoon.com/stochastic/tabu_search/.
+4. Hao, Peng, et al. Intra-Platoon Vehicle Sequence Optimization for Eco-Cooperative Adaptive Cruise Control. 1 Oct. 2017, https://doi.org/10.1109/itsc.2017.8317879. Accessed 14 Aug. 2023.
+5. “FPT to Support Vietnam’s Push for Ethical and Responsible AI Innovation.” Fptsoftware.com, 2024, fptsoftware.com/newsroom/news-and-press-releases/press-release/fpt-to-support-vietnamm-push-for-ethical-and-responsible-ai-innovation.
 
 #### Libraries Used:
 
